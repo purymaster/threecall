@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+.index header {width:1500px;}
+.index header nav > ul > li {width:276px;}
+
+section {width:1500px; margin:0 auto;}
+section .cont_wrap {text-align:center;}
+section .cont_wrap:after {content:""; display:table; clear:both;}
+section .cont_wrap > div {height:640px;}
+section .cont_wrap p {color:#fff; font-size:20px; line-height:28px;}
+section .cont_wrap .cont_left {float:left;}
+section .cont_wrap .cont_right {float:right;}
+section .contline_01 .cont_left,
+section .contline_02 .cont_right {width:440px;}
+section .contline_01 .cont_right,
+section .contline_02 .cont_left {width:1060px;}
+section .contline_01 .cont_left .cont_01 {height:310px;}
+section .contline_01 .cont_left .cont_02 {height:330px; width:440px; margin-left:-210px; padding-left:210px;}
+section .contline_02 .cont_right .cont_01 {height:310px; }
+section .contline_02 .cont_right .cont_02 {height:330px; width:440px; margin-right:-210px; padding-right:210px;}
+section .contline_02 .cont_right .cont {height:640px;}
+
+section .cell {background-size:cover !important;}
+
+section .cont_bg01 {background:url(../img/img/img_contbg_01.png);} /* 스마트 트리콜 */
+section .cont_bg02 {background:url(../img/img/img_contbg_02.png);} /* 트리콜만의 철학 */
+section .cont_bg03 {background:url(../img/img/img_contbg_03.png);} /* 전국 어디에서든 트리콜 */
+
+section .event_bg01 {background:url(../img/img/img_eventbg_01.png); background-position:top right;} /* 카드결제 이벤트 */
+section .event_bg02 {background:url(../img/img/img_eventbg_02.png); background-position:top left;} /* 지인추천 이벤트 */
+section .event_bg03 {background:url(../img/img/img_eventbg_03.png); background-position:top right;} /* 기사모집 */
+
+section .subcon_bg01 {background:url(../img/img/img_subconbg_01.png);} /* 트리콜대리운전 */
+section .subcon_bg02 {background:url(../img/img/img_subconbg_02.png);} /* APP 다운받기 */
+section .subcon_bg03 {background:url(../img/img/img_subconbg_03.png);} /* 혜택 */
+section .subcon_bg04 {background:url(../img/img/img_subconbg_04.png);} /* 리뷰 */
+
+.con_menu {font-size:0;}
+.con_menu li {display:inline-block; margin-left:5px; background-position:center 50px; background-repeat:no-repeat;}
+.con_menu li:nth-child(1) {background-image:url(../img/bl/bl_con_menu01.png); margin-left:0;}
+.con_menu li:nth-child(2) {background-image:url(../img/bl/bl_con_menu02.png);}
+.con_menu li:nth-child(3) {background-image:url(../img/bl/bl_con_menu03.png);}
+.con_menu li:nth-child(4) {background-image:url(../img/bl/bl_con_menu04.png);}
+.con_menu li:nth-child(5) {background-image:url(../img/bl/bl_con_menu05.png);}
+.con_menu li:nth-child(6) {background-image:url(../img/bl/bl_con_menu06.png);}
+.con_menu li:nth-child(7) {background-image:url(../img/bl/bl_con_menu07.png);}
+.con_menu li a {display:inline-block; box-sizing:border-box; height:200px; width:210px; padding-top:130px; font-size:20px; color:#555; text-align:center;}
+.con_menu li a:hover,
+.con_menu li a:focus,
+.con_menu li a:active {color:#e42526;}
+
+section .cont_right.slider {position:relative;}
+section .cont_right.slider img {width:100%; height:auto;}
+section .cont_right.slider .bx-controls {position:absolute; top:30px; right:30px; z-index:55;}
+section .cont_right.slider .bx-controls a {display:inline-block; width:24px; height:24px; text-indent:-9999px; opacity:0.5; background:url(../img/btn/btn_mainslide_page.png); margin-bottom:20px;}
+section .cont_right.slider .bx-controls a.active {opacity:1;}
+
+section .subcon_bg02 .btn {display:inline-block; width:330px; margin:0 auto; font-size:0; height:0; margin-top:38.18181818182%;}
+section .subcon_bg02 .btn a {display:inline-block; box-sizing:border-box; width:160px; line-height:50px; font-size:18px; color:#fff; padding-left:30px; background-color:#65a0e4; border-radius:5px; margin-right:10px; background-repeat:no-repeat;}
+section .subcon_bg02 .btn a:nth-child(1) {background-image:url(../img/bl/bl_apple.png); background-position:20% center;}
+section .subcon_bg02 .btn a:nth-child(2) {background-image:url(../img/bl/bl_google.png); margin-right:0; background-position:16% center;}
+section .subcon_bg02 .btn a:nth-child(3) {font-size:20px; width:100%; padding:0; margin-top:10px;}
+section .subcon_bg03 .event_link {background:#eb9d4a; border-color:#eb9d4a;}
+section .subcon_bg04 .event_link {background:#1b1b1b; border-color:#1b1b1b; margin-top:102.27272727273%;}
+
+section .event_link {display:inline-block; box-sizing:border-box; width:300px; line-height:50px; font-size:19px; text-align:center; margin:0 auto; border:1px solid #fff; border-radius:5px; color:#fff; margin-top:48.18181818182%;}
+section .event_link:hover,
+section .event_link:focus,
+section .event_link:active,
+section .subcon_bg02 .btn a:hover,
+section .subcon_bg02 .btn a:focus,
+section .subcon_bg02 .btn a:active {background-color:#e42526 !important; border-color:#e42526 !important;}
+
+.about_tc {background:url(../img/img/img_abouttc.png) no-repeat center center; height:200px;}
+
+.news_box {font-size:0; margin:80px 0;}
+.news_box li {display:inline-block; position:relative; margin-left:15px; height:460px;}
+.news_box li:first-child {margin-left:0;}
+.news_box li a {display:inline-block; box-sizing:border-box; width:490px; padding:30px; border:1px solid #ccc; max-height:460px;}
+.news_box li a:hover:before,
+.news_box li a:focus:before,
+.news_box li a:active:before {content:""; position:absolute; top:-1px; left:-1px; width:calc(100% - 4px); height:calc(100% - 4px); border:3px solid #e42526;}
+.news_box li a img {width:430px; height:200px; margin-bottom:30px;}
+.news_box li a span {display:block; font-size:18px; line-height:32px; color:#777; font-weight:500;}
+.news_box li a strong {display:inline-block; width:100%; font-size:24px; line-height:50px; color:#333; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.news_box li a p {font-size:16px; color:#555; line-height:24px; height:72px; margin-bottom:14px;}
+
+.cont_slider {position:relative; box-sizing:border-box; padding:18px 45px; border:1px solid #ccc; margin:80px 0;}
+.cont_slider li {background:#fff; text-align:center;}
+.cont_slider img {width:175px; height:64px; margin:5px 0;}
+.cont_slider .bx-controls .bx-prev,
+.cont_slider .bx-controls .bx-next {display:inline-block; position:absolute; top:30px; box-sizing:border-box; width:25px; height:50px; background-color:#fff; text-indent:-9999px; background-position:center center; background-size:19px 15px; background-repeat:no-repeat;}
+.cont_slider .bx-controls .bx-prev {left:0; background-image:url(../img/btn/btn_paging_prev.png);}
+.cont_slider .bx-controls .bx-next {right:0; background-image:url(../img/btn/btn_paging_next.png);}
+
+.index footer {width:1500px;}
+
+/* 1280px ~ 1499px 정의 */
+@media only screen and (min-width :1280px) and (max-width : 1499px) {
+	
+.index header {width:100%;}
+.index header nav > ul > li {width:calc(20% - 24px);}
+
+section {width:100%; max-width:1500px;}
+section .cont_wrap > div {height:0; padding-bottom:42.66666666667%;}
+section .contline_01 .cont_left,
+section .contline_02 .cont_right {width:29.33333333333%; max-width:440px;}
+section .contline_01 .cont_right,
+section .contline_02 .cont_left {width:70.66666666667%; max-width:1060px;}
+section .contline_01 .cont_left .cont_01 {height:0; padding-bottom:70.45454545455%;}
+section .contline_01 .cont_left .cont_02 {height:0; padding-bottom:75%; width:auto; margin-left:0; padding-left:0;}
+section .contline_02 .cont_right .cont_01 {height:0; padding-bottom:70.45454545455%;}
+section .contline_02 .cont_right .cont_02 {height:0; padding-bottom:75%; width:auto; margin-left:0; padding-left:0;}
+section .contline_02 .cont_right .cont {height:0; padding-bottom:145.45454545455%;}
+
+section .subcon_bg02 .btn {width:22vw;}
+section .subcon_bg02 .btn a {width:10.66666666667vw; line-height:3.33333333333vw; font-size:1.2vw; padding-left:2vw; border-radius:5px; margin-right:0.66666666667vw;}
+section .subcon_bg02 .btn a:nth-child(3) {font-size:1.33333333333vw; width:100%; margin-top:0.66666666667vw;}
+section .event_link {font-size:1.26666666667vw; width:20vw; line-height:3.33333333333vw;}
+
+.about_tc {background-size:contain;}
+
+.con_menu li {display:inline-block; width:calc((100% - 30px) / 7);}
+.con_menu li a {width:100%; font-size:1.33333333333vw;}
+
+.news_box li {height:auto; width:calc(33.33% - 10px);}
+.news_box li a {width:100%;}
+.news_box li a img {width:100%; height:auto;}
+
+.index footer {width:100%;}
+
+}
+
+/* 모바일 */
+@media only screen and (min-width :0px) and (max-width : 1279px) {
+
+section {width:100%;}
+section .cont_wrap {margin-bottom:15px;}
+section .cont_wrap > div {height:auto;}
+section .cont_wrap .cont_bg01,
+section .cont_wrap .cont_bg02,
+section .cont_wrap .cont_bg03 {height:0; padding-bottom:60.3125%;}
+section .cont_wrap .cont_left,
+section .cont_wrap .cont_right {display:block; float:none; width:100%;}
+
+section .cont_right.slider .bx-controls {top:15px; right:10px;}
+section .cont_right.slider .bx-controls a {width:12px; height:12px; margin-bottom:12px; background-size:12px 12px;}
+section .cont_right.slider .bx-controls a.active {opacity:1;}
+
+section .cell {background-size:contain !important; position:relative;}
+section .cont,
+section .cont_01.cell {height:100px !important; background-size:320px 100px !important; background-position:center center; background-repeat:no-repeat;}
+
+section .cont_bg01 {background:url(../img/img/img_contbg_01_m.png);} /* 스마트 트리콜 */
+section .cont_bg02 {background:url(../img/img/img_contbg_02_m.png);} /* 트리콜만의 철학 */
+section .cont_bg03 {background:url(../img/img/img_contbg_03_m.png);} /* 전국 어디에서든 트리콜 */
+
+section .subcon_bg01 {background-color:#099da3; background-image:url(../img/img/img_subconbg_01_m.png);} /* 트리콜대리운전 */
+section .subcon_bg02 {background-color:#2d82e3; background-image:url(../img/img/img_subconbg_02_m.png);} /* APP 다운받기 */
+section .subcon_bg03 {background-color:#ee7e07; background-image:url(../img/img/img_subconbg_03_m.png);} /* 혜택 */
+section .subcon_bg04 {background-color:#f1f1f1; background-image:url(../img/img/img_subconbg_04_m.png);} /* 리뷰 */
+
+section .subcon_bg02 .btn {position:absolute; height:auto; margin-top:0; top:36px; left:50%; margin-left:-30px; width:170px;}
+section .subcon_bg02 .btn a {font-size:10px; width:80px; line-height:27px; margin-right:5px; padding-left:17px; background-size:12px 12px;}
+section .event_link {position:absolute; top:36px; left:50%; margin-left:-30px; font-size:12px; width:170px; line-height:27px; margin-top:0 !important;}
+
+}

@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+/* APP 서비스 소개 */
+.app_intro .sub_title {text-align:center; font-size:36px; line-height:45px; letter-spacing:-3px; margin-top:60px;}
+.app_intro .sub_title strong {font-size:36px; font-weight:700; letter-spacing:-3px;}
+.app_intro ol.center {text-align:center; margin-top:10px;}
+.app_intro ol.center li {padding-left:0; text-indent:0;}
+.app_intro ol:last-of-type {margin-top:30px;}
+.app_intro ol:last-of-type li {line-height:32px; color:#555;}
+.app_intro .app_down {text-align:center; font-size:0; margin:25px 0 60px;}
+.app_intro .app_down a {display:inline-block; width:200px; height:48px; text-indent:-9999px; background-color:#111; background-repeat:no-repeat; background-position:center center; background-size:130px 28px; margin-left:10px; border-radius:3px;}
+.app_intro .app_down a:first-child {margin-left:0;}
+.app_intro .app_down .ios {background-image:url(../img/btn/btn_ios_down.png);}
+.app_intro .app_down .android {background-image:url(../img/btn/btn_android_down.png);}
+.app_intro .strong_point {overflow:hidden; margin-top:25px;}
+.app_intro .strong_point li {display:inline-block; float:left; box-sizing:border-box; width:240px; height:200px; padding-top:25px; border:1px solid #ddd; border-left:none; text-align:center;}
+.app_intro .strong_point li:first-child {border-left:1px solid #ddd;}
+.app_intro .strong_point li > * {line-height:1.5;}
+.app_intro .strong_point li span {display:block; font-size:36px; color:#e42526; font-weight:300; letter-spacing:-3px;}
+.app_intro .strong_point li strong {font-size:20px;}
+.app_intro .strong_point li p {font-size:16px; color:#777;}
+
+/* 회원소개 공통 */
+.info_txt {padding:40px; background:#eee;}
+.info_txt dl {overflow:hidden;}
+.info_txt dl dt,
+.info_txt dl dd {display:table; float:left; height:250px;}
+.info_txt dl dt {text-indent:-9999px; background-repeat:no-repeat;}
+.info_txt dl dd {}
+.info_txt dl dd p {display:table-cell; vertical-align:middle; line-height:28px; padding:0 40px; font-size:20px; color:#555;}
+
+/* 일반회원 소개 */
+.mem_ord .adv {box-sizing:border-box; height:360px; padding:110px 0 0 40px; background:url(../img/bg/bg_memord.jpg) center center;}
+.mem_ord .adv p {line-height:32px; font-size:20px; color:#999;}
+.mem_ord .adv .tit {line-height:46px; font-size:36px; color:#fff; letter-spacing:-3px; margin-bottom:10px;}
+.mem_ord .info {overflow:hidden; padding:40px;}
+.mem_ord .info .clause {float:left; font-size:28px; font-weight:500; letter-spacing:-2px;}
+.mem_ord .info .clause small {display:block; font-size:18px; color:#777; font-weight:400; margin-top:15px;}
+.mem_ord .info .clause + ul {float:right;}
+.mem_ord .info.grade ul {overflow:hidden;}
+.mem_ord .info.grade ul li {float:left; height:55px; padding-left:70px; margin-left:60px; background-size:50px 50px; background-repeat:no-repeat; font-size:24px;}
+.mem_ord .info.grade ul li:nth-child(1) {background-image:url(../img/bl/bl_grade_normal.png);}
+.mem_ord .info.grade ul li:nth-child(2) {background-image:url(../img/bl/bl_grade_gold.png);}
+.mem_ord .info.grade ul li:nth-child(3) {background-image:url(../img/bl/bl_grade_vvip.png);}
+.mem_ord .info.grade ul li small {display:block; font-size:16px; margin-top:10px; color:#555;}
+.mem_ord .info.use .clause + ul {margin-top:-3px;}
+.mem_ord .info_txt dl + p {margin-top:25px; text-align:center; font-size:18px; color:#777;}
+.mem_ord .info_txt dl dt,
+.mem_ord .info_txt dl dd {width:50%; background-color:#fff;}
+.mem_ord .info_txt dl dt:nth-of-type(1) {background-image:url(../img/bl/bl_info_left.png), url(../img/bg/bg_infotxt1.png); background-position:right center, center center;}
+.mem_ord .info_txt dl dt:nth-of-type(2) {background-image:url(../img/bl/bl_info_right.png), url(../img/bg/bg_infotxt2.png); background-position:left center, center center;}
+.mem_ord .info_txt dl dt:nth-of-type(2),
+.mem_ord .info_txt dl dd:nth-of-type(2) {float:right;}
+.mem_ord .service_info {margin-top:80px; border-top:2px solid #333;}
+.mem_ord .service_info dt {border-bottom:1px solid #ccc;}
+.mem_ord .service_info dt a {display:block; box-sizing:border-box; padding:0 29px; line-height:60px; font-size:20px; background:url(../img/bl/bl_infosv_off.png) no-repeat 1140px 15px;}
+.mem_ord .service_info dt.on a {color:#e42526; background:url(../img/bl/bl_infosv_on.png) no-repeat 1140px 15px;}
+.mem_ord .service_info dd {display:none; box-sizing:border-box; padding:60px 40px;}
+.mem_ord .service_info dd > strong {font-size:36px; font-weight:500; color:#fff; letter-spacing:-2px;}
+.mem_ord .service_info dd:nth-of-type(1) {height:730px; background:url(../img/bg/bg_infosv1.png);}
+.mem_ord .service_info dd:nth-of-type(2) {height:446px; background:url(../img/bg/bg_infosv2.png);}
+.mem_ord .service_info dd:nth-of-type(3) {height:575px; background:url(../img/bg/bg_infosv3.png);}
+.mem_ord .service_info dd:nth-of-type(4) {height:554px; background:url(../img/bg/bg_infosv4.png);}
+.mem_ord .service_info dd:nth-of-type(5) {height:395px; background:url(../img/bg/bg_infosv5.png);}
+.mem_ord .service_info dd span {display:block;}
+.mem_ord .service_info dd span,
+.mem_ord .service_info dd p,
+.mem_ord .service_info dd ul {margin-top:35px;}
+.mem_ord .service_info dd span + ul {margin-top:0;}
+.mem_ord .service_info dd span,
+.mem_ord .service_info dd p,
+.mem_ord .service_info dd li {font-size:18px; line-height:24px; color:#fff;}
+
+/* 법인회원 소개 */
+.mem_ord .info_txt .lawfirm + p {margin-top:25px; text-align:center; font-size:18px; color:#777;}
+.mem_ord .info_txt .lawfirm dt,
+.mem_ord .info_txt .lawfirm dd {width:25%; background-color:#fff;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(1) {background-image:url(../img/bl/bl_info_left.png), url(../img/bg/bg_infotxt3.png); background-position:right center, center center;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(2) {background-image:url(../img/bl/bl_info_left.png), url(../img/bg/bg_infotxt4.png); background-position:right center, center center;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(3) {background-image:url(../img/bl/bl_info_right.png), url(../img/bg/bg_infotxt5.png); background-position:left center, center center;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(4) {background-image:url(../img/bl/bl_info_right.png), url(../img/bg/bg_infotxt6.png); background-position:left center, center center;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(2),
+.mem_ord .info_txt .lawfirm dd:nth-of-type(2) {float:left;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(3),
+.mem_ord .info_txt .lawfirm dd:nth-of-type(3),
+.mem_ord .info_txt .lawfirm dt:nth-of-type(4),
+.mem_ord .info_txt .lawfirm dd:nth-of-type(4) {float:right;}
+.mem_ord .lawfirm_adv {overflow:hidden;}
+.mem_ord .lawfirm_adv li {display:inline-block; float:left; box-sizing:border-box; width:168px; height:140px; margin-left:4px; padding-top:90px; text-align:center; font-size:16px; color:#777; background-repeat:no-repeat; background-position:center 45px; background-size:48px 40px;}
+.mem_ord .lawfirm_adv li:nth-child(1) {margin-left:0; background-image:url(../img/bl/bl_lawadv1.png);}
+.mem_ord .lawfirm_adv li:nth-child(2) {background-image:url(../img/bl/bl_lawadv2.png);}
+.mem_ord .lawfirm_adv li:nth-child(3) {background-image:url(../img/bl/bl_lawadv3.png);}
+.mem_ord .lawfirm_adv li:nth-child(4) {background-image:url(../img/bl/bl_lawadv4.png);}
+.mem_ord .lawfirm_adv li:nth-child(5) {background-image:url(../img/bl/bl_lawadv5.png);}
+.mem_ord .lawfirm_adv li:nth-child(6) {background-image:url(../img/bl/bl_lawadv6.png);}
+.mem_ord .lawfirm_adv li:nth-child(7) {background-image:url(../img/bl/bl_lawadv7.png);}
+
+/* 법인회원 이용절차 */
+.flow_law {}
+.flow_law ul {overflow:hidden;}
+.flow_law ul li {display:inline-block; float:left; position:relative; box-sizing:border-box; width:270px; height:270px; margin:0 40px 40px 0; padding-top:120px; border:1px solid #ccc; border-radius:50%; text-align:center; background-repeat:no-repeat; background-size:60px 60px; background-position:center 45px;}
+.flow_law ul li span {display:inline-block; position:absolute; width:40px; line-height:40px; left:15px; top:25px; color:#fff; font-family:'roboto'; font-size:28px; text-align:center; background:#e42526; border-radius:50%;}
+.flow_law ul li strong {display:block; font-size:20px; color:#333; line-height:20px; font-weight:400; margin-bottom:14px;}
+.flow_law ul li p {font-size:16px; line-height:21px; color:#777;}
+.flow_law ul li:after {content:""; display:inline-block; position:absolute; right:-40px; top:115px; width:40px; height:40px; background:url(../img/bl/bl_lawflow_arrowright.png) no-repeat center center;}
+.flow_law ul li:nth-child(1) {background-image:url(../img/bl/bl_lawflow1.png);}
+.flow_law ul li:nth-child(2) {background-image:url(../img/bl/bl_lawflow2.png);}
+.flow_law ul li:nth-child(3) {background-image:url(../img/bl/bl_lawflow3.png);}
+.flow_law ul li:nth-child(4) {background-image:url(../img/bl/bl_lawflow4.png); margin-right:0;}
+.flow_law ul li:nth-child(5) {background-image:url(../img/bl/bl_lawflow5.png);}
+.flow_law ul li:nth-child(6) {background-image:url(../img/bl/bl_lawflow6.png);}
+.flow_law ul li:nth-child(7) {background-image:url(../img/bl/bl_lawflow7.png);}
+.flow_law ul li:nth-child(7):after {display:none;}
+
+/* 요금안내 */
+.mem_ord .pay_basic {text-align:center;}
+.mem_ord .pay_basic h4 {display:inline-block; font-size:26px; padding-bottom:15px; color:#555; font-weight:400; border-bottom:2px solid #ddd;}
+.mem_ord .pay_basic h4 span {display:inline-block; position:relative; top:6px; line-height:40px; margin-left:19px; padding-left:44px; background:url(../img/bl/bl_payment_basic.png) no-repeat left center; font-size:24px; color:#e42526;}
+.mem_ord .pay_basic h4 span strong {font-size:46px; color:#e42526; letter-spacing:-2px;}
+.mem_ord .payment h4 {font-size:24px; line-height:23px; color:#333; font-weight:500; margin:40px 0 21px 0;}
+.mem_ord .payment h4:before {content:"·";}
+.mem_ord .payment table + h4 {margin-top:57px;}
+.mem_ord .payment table {border-top:2px solid #aaa;}
+.mem_ord .payment table col:nth-child(1) {width:auto;}
+.mem_ord .payment table col:nth-child(2) {width:220px;}
+.mem_ord .payment table:last-of-type col:nth-child(1) {width:90px;}
+.mem_ord .payment table:last-of-type col:nth-child(2) {width:auto;}
+.mem_ord .payment table:last-of-type col:nth-child(3) {width:220px;}
+.mem_ord .payment table th,
+.mem_ord .payment table td {font-size:16px; padding:14px 27px; border-bottom:1px solid #bbb; vertical-align:middle; font-weight:400;}
+.mem_ord .payment table th {}
+.mem_ord .payment table td {line-height:20px; border-left:1px solid #bbb;}
+.mem_ord .payment table tr td:first-child {border-left:none;}
+.mem_ord .payment table tr .price {text-align:center;}
+.mem_ord .payment table tr .price span {font-size:16px;}
+.mem_ord .payment + p {line-height:20px; margin-top:17px; font-size:16px; color:#777;}
+.mem_ord .payment + p:before {content:"※"; margin-right:5px;}
+.mem_ord.law .payment table col:nth-child(1) {width:110px;}
+.mem_ord.law .payment table col:nth-child(2) {width:auto;}
+.mem_ord.law .payment table tr .price {text-align:left;}
+
+/* 주요 법인고객 */
+.customer ul {border-top:1px solid #ddd; font-size:0;}
+.customer ul li {display:inline-block; box-sizing:border-box; width:300px; line-height:130px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; text-align:center;}
+.customer ul li:nth-child(4n-3) {border-left:1px solid #ddd;}
+
+/* 온라인문의 */
+.info_desk {margin-top:80px; padding:30px 0; padding-left:456px; border:1px solid #ccc; text-align:left; background:url(../img/bl/bl_cc.png) no-repeat 388px center;}
+.info_desk p {font-size:30px; line-height:36px; font-weight:300;}
+.info_desk p strong {font-size:26px; line-height:36px; font-weight:400; margin-right:9px;}
+.info_desk small {font-size:16px; line-height:24px; color:#777;}
+
+/* 고객피해보상제도 */
+.ac_step > li {text-align:center; border-top:1px solid #ccc;}
+.ac_step > li h4 {font-size:30px; line-height:32px; font-weight:400; margin-top:57px;}
+.ac_step > li big {display:block; font-size:36px; color:#e42526; line-height:40px;}
+.ac_step > li strong {display:block; font-size:20px; line-height:26px; margin:87px 0 23px; font-weight:400;}
+.ac_step > li p {font-size:17px; line-height:26px; color:#777;}
+.ac_step > li ol {overflow:hidden;}
+.ac_step > li ol li {display:inline; float:left;}
+.ac_step > li ol li:first-child:before {width:0 !important; height:0 !important;}
+.ac_step > li:first-child ol {margin-top:37px; margin-bottom:60px;}
+.ac_step > li:first-child ol li:before {content:''; display:inline-block; float:left; width:40px; height:330px; background:url(../img/btn/btn_paging_next.png) no-repeat center center; background-size:19px 15px;}
+.ac_step > li:first-child ol li > div {display:inline-block; box-sizing:border-box; width:270px; height:330px; padding:35px 30px 40px; border:1px solid #ccc; background-repeat:no-repeat; background-size:72px 50px; background-position:center 90px;}
+.ac_step > li:first-child ol li:nth-child(1) > div {background-image:url(../img/bl/bg_ac1.png);}
+.ac_step > li:first-child ol li:nth-child(2) > div {background-image:url(../img/bl/bg_ac2.png);}
+.ac_step > li:first-child ol li:nth-child(3) > div {background-image:url(../img/bl/bg_ac3.png);}
+.ac_step > li:first-child ol li:nth-child(4) > div {background-image:url(../img/bl/bg_ac4.png);}
+.ac_step > li:last-child .sub_tit {font-size:20px; color:#777; line-height:26px; margin-top:27px;}
+.ac_step > li:last-child ol {margin-top:47px;}
+.ac_step > li:last-child ol li:before {content:''; display:inline-block; float:left; width:75px; height:112px; background:url(../img/bl/bl_3dot.png) no-repeat center 28px;}
+.ac_step > li:last-child ol li > div {display:inline-block; box-sizing:border-box; width:350px;}
+.ac_step > li:last-child ol li span {display:inline-block; width:350px; line-height:60px; border-radius:30px; color:#fff; background:#e42526; font-size:24px; font-weight:300; margin-bottom:17px;}
+.ac_step > li:last-child ol + p {margin-top:40px; font-size:16px; line-height:24px;}
+
+/* CEO인사말 */
+.ceo {padding:40px; padding-right:470px; background:url(../img/img/img_ceo.png) no-repeat 760px 20px;}
+.ceo > strong {font-size:36px; font-weight:400;}
+.ceo p {font-size:20px; line-height:30px; margin-top:20px; color:#555;}
+.ceo p strong {font-size:26px; font-weight:400;}
+.ceo p span {margin-left:10px; font-size:24px; color:#555; letter-spacing:8px;}
+.ceo + .slider {position:relative; box-sizing:border-box; padding:18px 45px; background:#eee; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.ceo + .slider li {background:#fff;}
+.ceo + .slider img {width:175px; height:64px; margin:5px 0;}
+.ceo + .slider .bx-controls .bx-prev,
+.ceo + .slider .bx-controls .bx-next {display:inline-block; position:absolute; top:30px; box-sizing:border-box; width:25px; height:50px; background-color:#fff; border:1px solid #ddd; text-indent:-9999px; background-position:center center; background-size:19px 15px; background-repeat:no-repeat;}
+.ceo + .slider .bx-controls .bx-prev {left:0; background-image:url(../img/btn/btn_paging_prev.png);}
+.ceo + .slider .bx-controls .bx-next {right:0; background-image:url(../img/btn/btn_paging_next.png);}
+
+/* 트리콜혜택(회사소개) */
+.adv_tc > li {border-top:1px solid #ccc}
+.adv_tc > li:first-child {border:none; margin-top:-50px;}
+.adv_tc > li:before {content:''; display:inline-block; float:left; width:360px; height:360px; background-size:cover; background-position:center center; margin-top:80px;}
+.adv_tc > li:nth-child(1):before {background-image:url(../img/img/imt_tca01.png);}
+.adv_tc > li:nth-child(2):before {background-image:url(../img/img/imt_tca02.png);}
+.adv_tc > li:nth-child(3):before {background-image:url(../img/img/imt_tca03.png);}
+.adv_tc > li:nth-child(4):before {background-image:url(../img/img/imt_tca04.png);}
+.adv_tc > li > div {min-height:360px; padding:80px 0 80px 420px;}
+.adv_tc > li strong {display:inline-block; margin-top:20px; font-size:30px; line-height:38px; font-weight:400;}
+.adv_tc > li strong span {float:left; font-size:36px; line-height:38px; margin-right:10px;}
+.adv_tc > li p {font-size:16px; line-height:26px; color:#777; margin-top:8px;}
+.adv_tc > li .main {font-size:24px; line-height:30px; color:#333; margin-top:30px;}
+.adv_tc > li strong + .main {margin-top:15px;}
+.adv_tc > li .sub {font-size:20px; line-height:26px; color:#555; margin-top:30px;}
+.adv_tc > li .main + p {margin-top:10px;}
+.adv_tc > li .main + .sub {margin-top:20px;}
+.adv_tc > li .cont_tit {font-size:18px; color:#555; margin:20px 0 10px !important;}
+.adv_tc > li .cont_step img {width:780px; height:274px;}
+.adv_tc > li ul li {font-size:16px; line-height:26px; color:#777;}
+.adv_tc > li .type_01 {margin-top:16px;}
+.adv_tc > li .type_01 li {padding-left:13px; text-indent:-13px; margin-top:4px;}
+.adv_tc > li .type_01 li:before {content:'·'; margin-right:10px;}
+.adv_tc > li .type_02 {margin-top:6px;}
+.adv_tc > li .type_02 li {}
+.adv_tc > li .type_02 li:before {content:'-'; margin-right:2px;}
+.adv_tc > li big {display:block; font-size:16px; margin-top:25px; margin-bottom:10px;}
+.adv_tc > li big:before {content:'[';}
+.adv_tc > li big:after {content:']';}
+.adv_tc > li p + .cont {margin-top:0;}
+.adv_tc > li .cont:before {content:'내용 >'; display:inline-block; float:left; width:50px; color:#777;}
+.adv_tc > li .cont li {padding-left:65px; text-indent:-15px; color:#777;}
+.adv_tc > li p.cont {padding-left:50px;}
+.adv_tc > li p.cont:before {margin-left:-50px;}
+
+/* 조직도 */
+.org {text-align:center;}
+
+/* 연혁 */
+.history {padding-top:40px; border-top:1px solid #ccc;}
+.history > div {background-position:center center; background-repeat:no-repeat;}
+.his_2010 {height:1578px; background-image:url(../img/img/img_2010_pc.png);}
+.his_2000 {height:735px; background-image:url(../img/img/img_2000_pc.png); margin-top:80px;}
+
+/* 약도 및 연락처 */
+.map {overflow:hidden; text-align:center;}
+.map .map_view {display:inline-block; width:840px; float:left;}
+.map .map_view iframe {box-sizing:border-box; border:1px solid #ccc;}
+.map .map_tab {display:inline-block; float:right; width:340px; box-sizing:border-box; border-top:1px solid #ccc;}
+.map .map_tab li {box-sizing:border-box; text-align:left; border-bottom:1px solid #ccc;}
+.map .map_tab li > a {display:inline-block; width:100%; padding:30px 24px; box-sizing:border-box; border:5px solid #fff;}
+.map .map_tab li.on > a {border:5px solid #e42526;}
+.map .map_tab h4 {font-size:26px; color:#333; font-weight:400; line-height:24px;}
+.map .map_tab p {font-size:15px; color:#777; line-height:15px; margin:17px 0 11px 0;}
+.map .map_tab .num {font-size:18px; line-height:19px; margin:0;}
+.map .map_tab .num span {font-size:18px; color:#333; line-height:19px;}
+.map .map_tab .num span:before {color:#e42526; margin-right:3px;}
+.map .map_tab .num span:first-child:before {content:"T.";}
+.map .map_tab .num span:first-child:after {content:"/"; padding:0 3px;}
+.map .map_tab .num span:nth-child(2):before {content:"F.";}
+.map .map_tab li:last-child .num span:first-child:after {content:"";}
+
+/* 복지혜택 */
+.welfare > li {box-sizing:border-box; padding:40px 0; border-top:1px solid #ddd; overflow:hidden;}
+.welfare > li img {float:left; width:360px; height:200px; margin-right:60px;}
+.welfare > li p {font-size:30px; line-height:82px;}
+.welfare > li ul {font-size:0;}
+.welfare > li ul li {display:inline-block; font-size:18px; line-height:30px; color:#555;}
+.welfare > li ul li:nth-child(3n+1) {width:247px;}
+.welfare > li ul li:nth-child(3n+2) {width:288px;}
+.welfare > li ul li:nth-child(3n) {width:200px;}
+.welfare > li ul li:before {content:'·'; display:inline-block; width:15px;}
+
+/* 트리콜혜택 */
+.tc_wel {font-size:0; margin-top:25px;}
+.tc_wel li {display:inline-block; width:360px; margin-left:60px; padding-top:200px; margin-bottom:30px; text-align:center; background-repeat:no-repeat; background-position:top center;}
+.tc_wel li:nth-child(1) {background-image:url(../img/img/img_tcwel1.png);}
+.tc_wel li:nth-child(2) {background-image:url(../img/img/img_tcwel2.png);}
+.tc_wel li:nth-child(3) {background-image:url(../img/img/img_tcwel3.png);}
+.tc_wel li:nth-child(4) {background-image:url(../img/img/img_tcwel4.png);}
+.tc_wel li:nth-child(5) {background-image:url(../img/img/img_tcwel5.png);}
+.tc_wel li:nth-child(6) {background-image:url(../img/img/img_tcwel6.png);}
+.tc_wel li:nth-child(7) {background-image:url(../img/img/img_tcwel7.png);}
+.tc_wel li:nth-child(8) {background-image:url(../img/img/img_tcwel8.png);}
+.tc_wel li:nth-child(3n+1) {margin-left:0;}
+.tc_wel li p {font-size:18px; line-height:60px;}
+
+/* 기사용 APP 설명서 */
+.manual_view {position:relative; border:1px solid #ddd; padding:55px 69px;}
+.manual_view .bx-controls .bx-prev,
+.manual_view .bx-controls .bx-next {display:inline-block; position:absolute; top:50%; width:23px; height:44px; text-indent:-9999px; margin-top:-22px;}
+.manual_view .bx-controls .bx-prev {background:url(../img/btn/btn_appmanual_prev.png); left:29px;}
+.manual_view .bx-controls .bx-next {background:url(../img/btn/btn_appmanual_next.png); right:29px;}
+.app_manual > li .tit {font-size:26px; font-weight:500; text-align:center; line-height:30px;}
+.app_manual > li > div {text-align:center;}
+.app_manual ol {display:inline-block; overflow:hidden; margin-top:38px;}
+.app_manual ol li {display:inline-block; float:left; width:250px; margin-left:20px;}
+.app_manual ol li:first-child {margin-left:0;}
+.app_manual ol li img {width:250px; height:440px;}
+.app_manual ol li strong {display:block; font-size:30px; color:#e42526; text-align:center; font-weight:300; line-height:40px; margin:20px 0 5px;}
+.app_manual ol li p {font-size:20px; line-height:28px;}
+.app_manual ol li span {display:block; font-size:16px; color:#777; line-height:18px; margin-top:10px;}
+.app_manual ol li .ps:before {content:"※"; margin-right:3px;}
+
+/* 교육내용 */
+.rule_10 {overflow:hidden; border-left:1px solid #ddd; border-top:1px solid #ddd;}
+.rule_10 li {display:table; float:left; box-sizing:border-box; width:50%; padding:0 40px; border-right:1px solid #ddd; border-bottom:1px solid #ddd;}
+.rule_10 li span {display:inline-block; font-size:30px; line-height:120px; color:#e42526;}
+.rule_10 li p {display:table-cell; vertical-align:middle; width:460px; font-size:18px; line-height:30px; color:#555;}
+
+/* 고용디딤돌 */
+.driver_adv {overflow:hidden;}
+.driver_adv > li {display:inline-block; float:left; width:390px; margin-left:15px;}
+.driver_adv > li:first-child {margin-left:0;}
+.driver_adv > li img {width:390px; height:220px;}
+.driver_adv > li p {font-size:20px; line-height:25px; margin-top:18px;}
+.driver_adv > li ul {}
+.driver_adv > li ul li {margin-top:14px; font-size:16px; line-height:24px; color:#777; padding-left:10px; text-indent:-10px;}
+.driver_adv > li ul li:before {content:'-'; margin-right:3px;}

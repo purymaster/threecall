@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/*********************************************************************** 
+mobile
+***********************************************************************/
+@media only screen and (min-width :0px) and (max-width : 1279px) {
+	
+/* APP 서비스 소개 */
+.app_intro .sub_title {margin-top:30px; line-height:25px; font-size:20px; letter-spacing:-1px;}
+.app_intro .sub_title strong {display:block; font-size:20px; line-height:25px; font-weight:700; letter-spacing:-1px;}
+.app_intro ol:last-of-type {margin-top:25px;}
+.app_intro ol:last-of-type li {line-height:25px;}
+.app_intro .app_down {margin-bottom:30px;}
+.app_intro .app_down a {width:calc(50% - 5px); height:40px; background-size:105px 23px;}
+.app_intro .strong_point li {display:block; float:none; box-sizing:border-box; width:auto; height:150px; padding-top:15px; border:1px solid #ddd; border-top:none;}
+.app_intro .strong_point li:first-child {border-top:1px solid #ddd;}
+.app_intro .strong_point li span {font-size:30px; letter-spacing:-2px;}
+.app_intro .strong_point li strong {font-size:18px;}
+.app_intro .strong_point li p {font-size:14px;}
+
+/* 회원소개 공통 */
+.info_txt {padding:40px 15px;}
+.info_txt dl dt,
+.info_txt dl dd {float:none; height:150px;}
+.info_txt dl dt {display:block; width:100% !important; background-size:5px 5px, cover;}
+.info_txt dl dd {width:100% !important;}
+.info_txt dl dd p {line-height:18px; padding:0 15px; font-size:14px; vertical-align:top; padding-top:22px;}
+
+/* 일반회원 소개 */
+.mem_ord .adv {box-sizing:border-box; height:180px; padding:45px 0 0 20px; background-size:cover;}
+.mem_ord .adv p {line-height:16px; font-size:12px;}
+.mem_ord .adv .tit {line-height:25px; font-size:20px; color:#fff; letter-spacing:-1px;}
+.mem_ord .info {padding:30px 0; text-align:center;}
+.mem_ord .info .clause {display:block; float:none; text-align:center; font-size:18px;}
+.mem_ord .info .clause small {font-size:14px; margin-top:8px;}
+.mem_ord .info .clause + ul {float:none;}
+.mem_ord .info.grade ul {display:inline-block; margin-top:18px;}
+.mem_ord .info.grade ul li {width:60px; height:auto; padding-left:0; padding-top:60px; margin-left:20px; background-position:center 0; font-size:18px;}
+.mem_ord .info.grade ul li:nth-child(1) {margin-left:0;}
+.mem_ord .info.grade ul li small {font-size:14px; margin-top:8px;}
+.mem_ord .info.use .clause + ul {margin-top:15px; text-align:left;}
+.mem_ord .info_txt dl + p {margin-top:20px; font-size:14px; line-height:18px;}
+.mem_ord .info_txt dl dt:nth-of-type(1) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt1.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .info_txt dl dt:nth-of-type(2) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt2.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .service_info {margin-top:40px;}
+.mem_ord .service_info dt a {padding:0; line-height:39px; font-size:14px; background-position:right center; background-size:15px 15px;}
+.mem_ord .service_info dt.on a {background-position:right center; background-size:15px 15px;}
+.mem_ord .service_info dd {display:none; padding:26px 0; background:none !important; height:auto !important; border-bottom:1px solid #ccc;}
+.mem_ord .service_info dd > strong {display:none;}
+.mem_ord .service_info dd span,
+.mem_ord .service_info dd p,
+.mem_ord .service_info dd ul {margin-top:26px;}
+.mem_ord .service_info dd span,
+.mem_ord .service_info dd p,
+.mem_ord .service_info dd li {font-size:14px; line-height:20px; color:#555;}
+.mem_ord .service_info dd p:first-of-type {margin-top:0;}
+
+/* 법인회원 소개 */
+.mem_ord .info_txt .lawfirm + p {margin-top:20px; font-size:14px; line-height:18px;}
+.mem_ord .info_txt .lawfirm dt,
+.mem_ord .info_txt .lawfirm dd {width:50%; background-color:#fff;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(1) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt3.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(2) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt4.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(3) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt5.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(4) {background-image:url(../img/bl/bl_info_mobile.png), url(../img/bg/bg_infotxt6.png); background-position:center bottom, center center; background-size:20px 10px, cover;}
+.mem_ord .info_txt .lawfirm dt:nth-of-type(2),
+.mem_ord .info_txt .lawfirm dd:nth-of-type(2) {float:right;}
+.mem_ord .lawfirm_adv {margin:10px 0;}
+.mem_ord .lawfirm_adv li {width:33.33%; margin-left:0; font-size:14px; line-height:20px; height:103px; padding-top:70px; background-position:center 25px;}
+
+/* 법인회원 이용절차 */
+.flow_law ul li {display:block; float:none; width:250px; height:250px; margin:0 auto 40px; padding-top:120px; background-position:center 40px;}
+.flow_law ul li span {left:8px; font-size:23px;}
+.flow_law ul li strong {font-size:18px; line-height:17px; margin-bottom:14px;}
+.flow_law ul li p {font-size:14px; line-height:20px;}
+.flow_law ul li:after {content:""; right:105px; top:250px; webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -o-transform:rotate(90deg); -ms-transform:rotate(90deg); transform:rotate(90deg);}
+.flow_law ul li:nth-child(4) {margin:0 auto 40px;}
+
+/* 요금안내 */
+.mem_ord .pay_basic h4 {font-size:18px; padding-bottom:0;}
+.mem_ord .pay_basic h4 span {display:block; line-height:30px; margin-left:0; padding-left:20px; padding-bottom:5px; background-size:21px 17px; font-size:18px;}
+.mem_ord .pay_basic h4 span strong {font-size:30px; letter-spacing:-1px;}
+.mem_ord .payment h4 {font-size:15px; line-height:14px; margin:30px 0 15px 0;}
+.mem_ord .payment h4:before {content:"·";}
+.mem_ord .payment table {border-top:1px solid #666;}
+.mem_ord .payment table + h4 {margin-top:45px;}
+.mem_ord .payment table col:nth-child(1) {width:auto;}
+.mem_ord .payment table col:nth-child(2) {width:25%;}
+.mem_ord .payment table:last-of-type col:nth-child(1) {width:15%;}
+.mem_ord .payment table:last-of-type col:nth-child(2) {width:auto;}
+.mem_ord .payment table:last-of-type col:nth-child(3) {width:25%;}
+.mem_ord .payment table th,
+.mem_ord .payment table td {padding:13px 10px; font-size:14px;}
+.mem_ord .payment table th {}
+.mem_ord .payment table td {border-left:1px solid #bbb;}
+.mem_ord .payment table tr .price span {font-size:14px;}
+.mem_ord .payment + p {line-height:20px; font-size:14px; padding-left:18px; text-indent:-18px;}
+.mem_ord.law .payment table col:nth-child(1) {width:70px;}
+
+/* 주요 법인고객 */
+.customer ul li {width:50%; line-height:75px;}
+.customer ul li:nth-child(4n-3) {border-left:none;}
+.customer ul li:nth-child(odd) {border-left:1px solid #ddd;}
+.customer ul li img {width:100%; max-width:220px;}
+
+/* 온라인문의 */
+.info_desk {margin-top:40px; padding:55px 0 10px; text-align:center; background-position:center 15px; background-size:25px 28px;}
+.info_desk p {font-size:20px; line-height:24px;}
+.info_desk p strong {font-size:20px; line-height:24px; margin-right:5px;}
+.info_desk small {font-size:12px; line-height:18px;}
+
+/* 고객피해보상제도 */
+.ac_step > li {}
+.ac_step > li h4 {font-size:20px; line-height:24px; margin-top:27px;}
+.ac_step > li big {font-size:25px;}
+.ac_step > li strong {font-size:18px; margin:57px 0 3px;}
+.ac_step > li p {font-size:14px; line-height:20px;}
+.ac_step > li ol {overflow:hidden;}
+.ac_step > li ol li {display:block; float:none;}
+.ac_step > li ol li:first-child:before {}
+.ac_step > li:first-child ol {margin-top:18px; margin-bottom:60px;}
+.ac_step > li:first-child ol li:before {display:block; float:none; width:auto; height:40px; background-size:19px 15px; transform:rotate(90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(90deg);}
+.ac_step > li:first-child ol li > div {display:block; width:auto; height:auto; padding:20px; border:1px solid #ccc; background-repeat:no-repeat; background-size:72px 50px; background-position:center 60px;}
+.ac_step > li:first-child ol li:nth-child(1) > div {background-image:url(../img/bl/bg_ac1.png);}
+.ac_step > li:first-child ol li:nth-child(2) > div {background-image:url(../img/bl/bg_ac2.png);}
+.ac_step > li:first-child ol li:nth-child(3) > div {background-image:url(../img/bl/bg_ac3.png);}
+.ac_step > li:first-child ol li:nth-child(4) > div {background-image:url(../img/bl/bg_ac4.png);}
+.ac_step > li:last-child .sub_tit {font-size:14px; line-height:20px; margin-top:17px;}
+.ac_step > li:last-child ol {margin-top:17px;}
+.ac_step > li:last-child ol li:before {float:none; width:19px; height:40px; background:url(../img/bl/bl_3dot.png) no-repeat center center; transform:rotate(90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); background-size:19px 3px;}
+.ac_step > li:last-child ol li > div {display:block; width:auto;}
+.ac_step > li:last-child ol li span {display:inline-block; width:240px; line-height:50px; border-radius:25px; font-size:20px; margin-bottom:14px;}
+.ac_step > li:last-child ol + p {margin-top:37px; font-size:12px; line-height:18px;}
+
+/* CEO인사말 */
+.ceo {padding:0; background:none;}
+.ceo > strong {display:block; font-size:20px; line-height:25px; font-weight:400;}
+.ceo p {font-size:14px; line-height:24px; margin-top:15px;}
+.ceo p strong {font-size:14px;}
+.ceo p span {font-size:14px; letter-spacing:3px;}
+
+/* 트리콜혜택(회사소개) */
+.adv_tc > li {padding:40px 0;}
+.adv_tc > li:first-child {margin:0; padding-top:0;}
+.adv_tc > li:before {display:block; float:none; width:auto; height:150px; margin:0;}
+.adv_tc > li > div {min-height:0; padding:0;}
+.adv_tc > li strong {display:inline-block; margin-top:20px; font-size:20px; line-height:25px;}
+.adv_tc > li strong span {font-size:23px; line-height:25px; margin-right:5px;}
+.adv_tc > li p {font-size:14px; line-height:20px; margin-top:5px;}
+.adv_tc > li .main {font-size:15px; line-height:20px; margin-top:25px;}
+.adv_tc > li .sub {font-size:14px; line-height:20px; margin-top:15px;}
+.adv_tc > li .cont_tit {font-size:14px; margin-top:10px !important;}
+.adv_tc > li .cont_step img {width:100%; height:auto;}
+.adv_tc > li li {font-size:14px !important; line-height:23px !important;}
+.adv_tc > li .type_01 {margin-top:6px;}
+.adv_tc > li .type_01 li {padding-left:8px; text-indent:-8px;}
+.adv_tc > li .type_01 li:before {margin-right:5px;}
+.adv_tc > li .type_02 {margin-top:6px;}
+.adv_tc > li .type_02 li {padding-left:8px; text-indent:-8px;}
+.adv_tc > li big {font-size:15px; margin-top:20px;}
+.adv_tc > li .cont:before {width:38px; font-size:14px; line-height:20px;}
+.adv_tc > li .cont li {padding-left:50px; text-indent:-12px; color:#777;}
+.adv_tc > li p.cont {padding-left:38px;}
+.adv_tc > li p.cont:before {margin-left:-38px;}
+.adv_tc > li:last-child ol:last-child li {padding-left:65px; text-indent:-27px;}
+
+/* 조직도 */
+.org .mobile {display:inline-block !important; width:290px; height:auto;}
+
+/* 연혁 */
+.history {padding-top:30px;}
+.his_2010 {height:1144px; background-image:url(../img/img/img_2010_mo.png); background-size:290px 1144px;}
+.his_2000 {height:1020px; background-image:url(../img/img/img_2000_mo.png); background-size:290px 1020px; margin-top:60px;}
+	
+/* 약도 및 연락처 */
+.map .map_view {display:block; width:auto; float:none;}
+.map .map_view iframe {width:100%; height:235px;}
+.map .map_tab {width:100%; float:none; margin:20px 0;}
+.map .map_tab li > a {padding:17px 4px 10px 4px;}
+.map .map_tab h4 {font-size:20px; line-height:17px;}
+.map .map_tab p {font-size:14px; line-height:13px; margin:10px 0;}
+.map .map_tab .num {font-size:17px; line-height:19px;}
+.map .map_tab .num span {font-size:17px; line-height:17px;}
+
+/* 복지혜택 */
+.welfare > li {padding:30px 0; text-align:center;}
+.welfare > li img {float:none; width:100%; height:auto; margin:0;}
+.welfare > li p {font-size:20px; line-height:54px; margin-top:2px;}
+.welfare > li ul li {display:block; width:auto !important; font-size:14px; line-height:25px;}
+.welfare > li ul li:before {content:''; width:0;}
+
+/* 트리콜혜택 */
+.tc_wel {overflow:hidden; max-width:370px; margin:0 auto;}
+.tc_wel li {float:left; width:calc(50% - 5px); margin-left:10px; padding-top:100px; background-size:180px 100px; margin-bottom:20px;}
+.tc_wel li:nth-child(3n+1) {margin-left:10px;}
+.tc_wel li:nth-child(odd) {margin-left:0;}
+.tc_wel li p {font-size:14px; line-height:20px; padding:7px; min-height:40px;}
+
+/* 기사용 APP 설명서 */
+.manual_view {padding:35px 19px;}
+.manual_view .bx-controls .bx-prev,
+.manual_view .bx-controls .bx-next {top:40px; width:12px; height:22px; margin:0; background-size:12px 22px; z-index:50;}
+.manual_view .bx-controls .bx-prev {left:15px;}
+.manual_view .bx-controls .bx-next {right:15px;}
+.app_manual > li .tit {font-size:14px; line-height:20px; height:40px;}
+.app_manual ol {display:block; margin-top:38px;}
+.app_manual ol li {display:block; float:none; width:auto; margin-left:0; padding-bottom:40px;}
+.app_manual ol li img {width:100%; height:auto;}
+.app_manual ol li strong {font-size:25px; line-height:40px; margin:10px 0 0;}
+.app_manual ol li p {font-size:18px; line-height:26px;}
+.app_manual ol li span {font-size:14px; line-height:16px; margin-top:3px;}
+.app_manual ol li .ps:before {margin-right:2px;}
+
+/* 교육내용 */
+.rule_10 {overflow:hidden; border:none; border-top:1px solid #ddd;}
+.rule_10 li {display:block; float:none; width:auto; padding:10px 0 23px; border:1px solid #ddd; border-top:none; text-align:center;}
+.rule_10 li span {display:block; line-height:45px;}
+.rule_10 li p {display:block; width:auto; font-size:14px; line-height:20px;}
+
+/* 고용디딤돌 */
+.driver_adv > li {display:block; float:none; width:auto; margin:0; padding-bottom:10px;}
+.driver_adv > li img {width:100%; height:auto;}
+.driver_adv > li p {font-size:16px; line-height:40px; margin-top:10px; text-align:center;}
+.driver_adv > li ul {}
+.driver_adv > li ul li {margin-top:5px; font-size:12px; line-height:18px; padding-left:7px; text-indent:-7px;}
+.driver_adv > li ul li:before {margin-right:2px;}
+	
+}

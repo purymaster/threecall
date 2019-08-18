@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>트리콜대리운전</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no, email=no">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'>
+<meta name="description" content="">
+<meta name="keyword" content="">
+<link rel="stylesheet" href="../css/common.css"><!-- 리셋+공통 -->
+<link rel="stylesheet" href="../css/mainUI.css"><!-- 컨텐츠 -->
+<link rel="stylesheet" href="../css/mobile.css"><!-- 모바일 -->
+<script src="../js/jquery-1.12.1.min.js"></script>
+<script src="../js/jquery.ba-outside-events.min.js"></script>
+<script src="../js/mainUI.js"></script><script>
+	$(function(){
+		//입력 완료시 포커스 이동
+		$('input[name=num]').keyup(function(){
+			var input_id = $(this).attr('id');
+			if($(this).val().length >= $(this).attr("maxlength")){
+				switch(input_id){
+					case 'phone_m' : $("#phone_l").focus(); break;
+					case 'phone_l' : $("#user_mail").focus(); break;
+				};
+			};
+		});
+		
+		//이메일 계정 선택
+		$('#user_mailsel').on('change', function(){
+			var ac_val = $(this).val();
+			if(ac_val == '직접입력'){
+				$('#user_mailac').val('').attr("readonly", false).focus();
+			} else {
+				$('#user_mailac').val(ac_val).attr("readonly", true);
+			};
+		});
+		
+		//약관 스크롤 확인
+		$('.term .term_box').on('scroll', function(){
+			if((this.scrollTop + this.clientHeight) == this.scrollHeight)
+			$(this).next('.check').children('input').attr("disabled", false);
+			isReadterm = true;
+		}).next('.check').children('label').click(function(){
+			if(!isReadterm){
+				alert('개인정보취급방침을 읽어주시길 바랍니다.');
+			};
+		});
+	});
+	
+	//이메일 계정 유효성 체크
+	function check_mailac(val){
+		var check = /^((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+		if(check.test(val) === false){
+			return false;
+		};
+	};
+	
+	//입력폼 validation
+	var isReadterm = false; //약관 확인 여부를 위한 변수
+	
+	function check_vali(){
+		if($('input#user_pw').val().length < 6){
+			alert('비밀번호는 6자리로 입력해주시길 바랍니다.');
+			$('input#user_pw').focus();	return false;
+		} else if($('input#phone_m').val().length < 3){
+			alert('전화번호 가운데 번호는 3~4자리 번호로 입력해주시길 바랍니다.');
+			$('input#phone_m').focus();	return false;
+		} else if($('input#phone_m').val() == ""){
+			alert('전화번호 가운데 번호를 입력해주시길 바랍니다.');
+			$('input#phone_m').focus();	return false;
+		} else if($('input#phone_l').val().length < 4){
+			alert('전화번호 끝 번호는 4자리 번호로 입력해주시길 바랍니다.');
+			$('input#phone_l').focus();	return false;
+		} else if($('input#phone_l').val() == ""){
+			alert('전화번호 끝 번호를 입력해주시길 바랍니다.');
+			$('input#phone_l').focus();	return false;
+		} else if($('input#user_mail').val() == ""){
+			alert('이메일을 입력해주시길 바랍니다.');
+			$('input#user_mail').focus();	return false;
+		} else if($('input#user_mailac').val() == ""){
+			alert('이메일 계정을 선택 또는 직접 입력해주시길 바랍니다.');
+			$('input#user_mailac').focus();	return false;
+		} else if(check_mailac($('input#user_mailac').val()) == false){
+			alert('올바른 이메일 계정 형식이 아닙니다.');
+			$('input#user_mailac').focus();	return false;
+		} else if($('input#title').val() == ""){
+			alert('제목을 입력해주시길 바랍니다.');
+			$('input#title').focus();	return false;
+		} else if($('textarea#text').val() == ""){
+			alert('문의내용을 입력해주시길 바랍니다.');
+			$('textarea#text').focus();	return false;
+		} else if(isReadterm == false){
+			alert('개인정보취급방침을 읽어주시길 바랍니다.');
+			$('dl.term_box').attr('tabindex', '0').focus(); return false;
+		} else if($('input#check1').prop('checked') == false){
+			alert('개인정보취급방침에 동의해주시길 바랍니다.');
+			$('input#check1').focus();	return false;
+		} else {
+			alert('SUBMIT!'); //실제 개발 작업 연결
+			return true; 
+		};
+	};
+</script>
+</head>
+
+<body>
+<div class="ie8"><!-- 하위 브라우저 접속시 화면 -->
+    <img src="../img/img/img_logo.png" alt="트리콜대리운전" />
+    <p>
+        본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다.<br />
+        더 나은 브라우징을 위해, 최신 브라우저로 업데이트해주시길 바랍니다.
+    </p>
+    <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/">인터넷 익스플로러 업데이트</a>
+</div>
+
+<div class="skip"><!-- 스킵 네비게이션 -->
+    <a href="#content">본문 바로가기</a>
+</div>
+
+<div class="wrap">
+    <div class="header_wrap">
+        <header>
+            <h1><a href="#"><img src="../img/img/img_logo.png" alt="트리콜대리운전" /></a></h1>
+            <div class="nav">
+                <ul class="gnb pc">
+                	<li>
+                    	<a href="#">트리콜대리운전</a>
+                        <ul>
+                        	<li><a href="#">APP서비스</a></li>
+                            <li><a href="#">일반회원</a></li>
+                            <li><a href="#">법인회원</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#">사이버홍보실</a>
+                        <ul>
+                        	<li><a href="#">사회공헌 활동</a></li>
+                            <li><a href="#">미디어/Off-line홍보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#">고객센터</a>
+                        <ul>
+                        	<li><a href="#">공지사항</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">온라인문의</a></li>
+                            <li><a href="#">고객피해보상제도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#">회사소개</a>
+                        <ul>
+                        	<li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">트리콜 혜택</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">약도 및 연락처</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="#">For드라이버</a>
+                        <ul>
+                            <li><a href="#">트리콜 혜택</a></li>
+                            <li><a href="#">기사용 APP 설명서</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">고용디딤돌</a></li>
+                            <li><a href="#">교육내용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="open_menu" href="#none">전체메뉴 열기</a>
+                <nav>
+                	<p class="mobile">전체메뉴</p>
+                    <ul>
+                        <li>
+                        	<a href="#">트리콜대리운전</a>
+                            <ul>
+                                <li><a href="#">APP서비스</a></li>
+                                <li>
+                                	<a class="depth" href="#">일반회원</a>
+                                    <ul>
+                                    	<li><a href="#">일반회원 소개</a></li>
+                                        <li><a href="#">요금안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                	<a class="depth" href="#">법인회원</a>
+                                    <ul>
+                                    	<li><a href="#">법인회원 소개</a></li>
+                                        <li><a href="#">이용절차</a></li>
+                                        <li><a href="#">요금안내</a></li>
+                                        <li><a href="#">주요 법인고객</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+						</li>
+                        <li>
+                            <a href="#">사이버홍보실</a>
+                            <ul>
+                                <li><a href="#">사회공헌 활동</a></li>
+                                <li><a href="#">미디어/Off-line홍보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        	<a href="#">고객센터</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">온라인문의</a></li>
+                                <li><a href="#">고객피해보상제도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        	<a href="#">회사소개</a>
+                            <ul>
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">트리콜 혜택</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">약도 및 연락처</a></li>
+                                <li>
+                                	<a class="depth" href="#">채용</a>
+                                    <ul>
+                                    	<li><a href="#">법인회원 소개</a></li>
+                                        <li><a href="#">이용절차</a></li>
+                                        <li><a href="#">요금안내</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        	<a href="#">For 드라이버</a>
+                            <ul>
+                                <li><a href="#">트리콜 혜택</a></li>
+                                <li><a href="#">기사용 APP 설명서</a></li>
+                                <li>
+                                	<a class="depth" href="#">채용</a>
+                                    <ul>
+                                    	<li><a href="#">법인회원 소개</a></li>
+                                        <li><a href="#">이용절차</a></li>
+                                        <li><a href="#">요금안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">고용디딤돌</a></li>
+                                <li><a href="#">교육내용</a></li>
+                            </ul>
+						</li>
+                    </ul>
+                    <a class="close_menu" href="#none">전체메뉴 닫기</a>
+                </nav>
+                <ul class="sns pc">
+                    <li><a href="#"><img src="../img/btn/btn_fb.gif" alt="트리콜드라이버 페이스북" /></a></li>
+                    <li><a href="#"><img src="../img/btn/btn_yt.gif" alt="트리콜드라이버 유튜브 채널" /></a></li>
+                    <li><a href="#"><img src="../img/btn/btn_tw.gif" alt="트리콜드라이버 트위터" /></a></li>
+                    <li><a href="#"><img src="../img/btn/btn_nb.gif" alt="트리콜드라이버 네이버 블로그" /></a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <section>
+    	<div class="upper_ban type2">
+        	<h2>고객센터</h2>
+            <small>고객과 함께하는 트리콜! 최고,신뢰,감동으로 격조 높은 서비스를 제공하겠습니다.</small>
+        </div>
+        <div class="contents">
+            <ul class="tab_menu type4"> <!-- 탭메뉴 -->
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li class="on"><a href="#">온라인문의</a></li>
+                <li><a href="#">고객피해보상제도</a></li>
+            </ul>
+            <div class="location">
+            	<ul>
+                	<li>HOME</li>
+                    <li>고객센터</li>
+                    <li>온라인문의</li>
+                </ul>
+            </div>
+            <div id="content">
+                <div class="con_title">
+                    <h3>온라인문의</h3>
+                    <small>궁금하신 사항을 문의해주시면 친절하게 답변해드리겠습니다.</small>
+                </div>
+                <div class="content_view"> <!-- 컨텐츠 내용 시작 -->
+                	<p class="input_must"><span>필수입력항목</span>은 필수입력 항목입니다.</p>
+                	<dl class="input_box">
+                    	<dt>
+                        	<label for="radio1">문의유형</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd>
+                        	<div class="radio">
+                                <input type="radio" id="radio1" name="select" checked>
+                                <label for="radio1">대리운전서비스 관련 문의</label>
+                                <input type="radio" id="radio2" name="select">
+                                <label for="radio2">대리운전기사 관련 문의</label>
+                                <input type="radio" id="radio3" name="select">
+                                <label for="radio3">채용관련 문의</label>
+                            </div>
+                        </dd>
+                        <dt>
+                        	<label for="user_pw">비밀번호</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd class="password">
+                        	<input id="user_pw" maxlength="6" type="password" name="num">
+                            <p>비밀번호 숫자 6자리를 설정하세요.</p>
+                        </dd>
+                        <dt>
+                        	<label for="phone_f">연락처</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd class="phone">
+                        	<div class="select_box">
+                                <label for="phone_f">010</label>
+                                <select id="phone_f" title="전화번호 앞자리 선택">
+                                    <option>010</option>
+									<option>011</option>
+                                    <option>016</option>
+                                    <option>017</option>
+                                    <option>018</option>
+                                    <option>019</option>
+                                </select>
+                            </div>
+                            <span>-</span>
+                            <input id="phone_m" type="text" maxlength="4" name="num" title="전화번호 가운데자리">
+                            <span>-</span>
+                            <input id="phone_l" type="text" maxlength="4" name="num" title="전화번호 끝자리">
+                        </dd>
+                        <dt>
+                        	<label for="user_mail">이메일</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd class="email">
+                        	<input id="user_mail" type="text">
+                            <span>@</span>
+                            <input id="user_mailac" type="text" title="이메일 계정">
+                            <div class="select_box">
+                                <label for="user_mailsel">직접입력</label>
+                                <select id="user_mailsel" title="이메일 계정 선택">
+                                    <option>직접입력</option>
+									<option>naver.com</option>
+                                    <option>hanmail.net</option>
+                                    <option>gmail.com</option>
+                                    <option>nate.com</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dt>
+                        	<label for="title">제목</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd class="remain">
+                        	<input id="title" class="title remain_check" type="text">
+                            <span class="count"><strong class="c_count">0</strong> / <span class="m_count">40</span>자</span>
+                        </dd>
+                        <dt>
+                        	<label for="text">문의내용</label>
+                            <span>필수입력항목</span>
+                        </dt>
+                        <dd class="textarea remain">
+                        	<textarea class="remain_check" id="text" rows="" cols=""></textarea>
+                            <span class="count"><strong class="c_count">0</strong> / <span class="m_count">1000</span>자</span>
+                        </dd>
+                    </dl>
+                    <div class="term">
+                    	<h4>
+                        	개인정보취급방침
+                            <small>개인정보 취급방침에 대한 내용을 모두 읽고 동의 해주세요</small>
+						</h4>
+                        <dl class="term_box">
+                        	<dt>수집하는 개인정보의 항목</dt>
+                            <dd>
+                            	<ul>
+                                	<li>회사는 홈페이지에서 고객문의 글 작성시 아래와 같은 개인정보를 수집하고 있습니다.</li>
+                                    <li>수집항목 : 휴대폰번호, 이메일</li>
+                                </ul>
+                            </dd>
+                            <dt>개인정보 보유 및 이용기간</dt>
+                            <dd>
+                            	<ul>
+                                	<li>귀하의 개인정보는 다음과 같이 개인정보의 수집 목적 또는 제공받은 목적이 달성되면 1개월 이내에 파기됩니다.</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                    <li>하늘에서 약관이 빗발친다!</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <div class="check">
+                            <input type="checkbox" id="check1" name="check" disabled>
+                            <label for="check1">동의합니다.</label>
+                        </div>
+                    </div>
+                    <div class="btn_area">
+                    	<button type="submit" onClick="check_vali();">확인</button>
+                        <a class="white" href="#">취소</a>
+                    </div>
+                    <div class="info_desk">
+                    	<p><strong>고객상담센터</strong>051)990-1008~7</p>
+                        <small>상담 : 평일 am 09:00 ~ pm 06:00 / 토.일.공휴일 휴무</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer_wrap">
+        <footer>
+            <ul class="others pc">
+            	<li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">트리콜대리운전</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">사이버홍보실</a></li>
+                <li><a href="#">회사소개</a></li>
+            </ul>
+            <div class="affiliate pc">
+            	<a href="#none">삼주그룹 계열사 바로가기</a>
+                <ul>
+                	<li><a href="#">삼주그룹</a></li>
+                    <li><a href="#">삼주다이아몬드베이</a></li>
+                    <li><a href="#">진하호텔&amp;리조트</a></li>
+                    <li><a href="#">울산마리나</a></li>
+                    <li><a href="#">삼주Stech</a></li>
+                    <li><a href="#">MBC삼주아트홀</a></li>
+                </ul>
+            </div>
+            <img class="logo" src="../img/img/img_footerlogo.png" alt="삼주그룹" />
+            <dl class="pc">
+            	<dt>고객센터</dt>
+                <dd><a href="tel:16003333">1600.3333</a></dd>
+            </dl>
+            <address>
+            	부산시 동래구 사직동 101-1번지 삼주빌딩 대표이사 백승용&nbsp;<br class="mobile">
+                사업자등록번호 : 602-81-40485&nbsp;<br class="pc">
+				대표전화 : 1600.3333&nbsp;<br class="mobile">
+                법인대표 :  051.990.1563&nbsp;
+                문의팩스 :  051.990.1039
+            </address>
+            <p class="copyright">COPYRIGHT  2016 THREECALL CO.LTD. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
